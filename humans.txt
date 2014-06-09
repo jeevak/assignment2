@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jeevak Kasarkod -- Solo -- @jeevak
+
+# THANKS
+
+    Oswald Campesato
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr, Firebase, Bootstrap
