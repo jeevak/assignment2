@@ -6,6 +6,7 @@ $(document).ready(function () {
     $("#ready").hide();
     var restaurantRef = new Firebase('https://jeevak-example.firebaseio.com/restaurants');
     var query = restaurantRef.limit(10);
+    $("#listOfRestaurants").append("<option selected=\"selected\">Select a restaurant</option>")
     query.on('child_added', function (snapshot) {
         var value = snapshot.val();
         if (value != null) {
@@ -39,15 +40,20 @@ $(document).ready(function () {
     });
 
     $('#menuitems').click(function () {
-        $("#ready").show();
+        if ($('input[type=checkbox]').is(":checked")) {
+            $("#ready").show();
+        }
+        else {
+            $("#ready").hide();
+        }
     });
 
     $('#submit').click(function () {
-        var checkValues = $('input[type=checkbox]:checked').map(function() {
+        var checkValues = $('input[type=checkbox]:checked').map(function () {
             return $(this).val();
         }).get();
-       var orderRef= new Firebase("https://jeevak-example.firebaseio.com/orders");
-       orderRef.push({"user":"default", "restaurant": $("#listOfRestaurants option:selected").text(),"order":checkValues});
+        var orderRef = new Firebase("https://jeevak-example.firebaseio.com/orders");
+        orderRef.push({"user": "default", "restaurant": $("#listOfRestaurants option:selected").text(), "order": checkValues});
     });
 });
 

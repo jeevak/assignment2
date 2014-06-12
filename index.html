@@ -1,38 +1,52 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coding House Restaurant Order App</title>
+    <!--meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"-->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-        <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
-        <script src="js/order.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
+    <link ref="stylesheet" href="css/bootstrap.min.css">
+    <!--link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css"-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--script src="js/vendor/modernizr-2.6.2.min.js"></script-->
+    <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+    <script src="js/order.js"></script>
+</head>
+<body>
+<div id="page">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="container">
+    </header>
+    <section id="body" class="container">
         <form>
-            <div id="restaurants">
+            <div id="restaurants" class="col-md-offset-2 col-md-6">
                 <select id="listOfRestaurants" autofocus="true"></select>
             </div>
-            <div id="menuitems">
+            <div id="menuitems" class="col-md-6">
             </div>
             <div id="ready">
-            <input id="submit" type="submit" value="Submit">
+                <input id="submit" type="submit" value="Submit">
             </div>
         </form>
-    </body>
+    </section>
+    <hr/>
+    <footer class="container">
+    </footer>
+</div>
+</body>
 </html>
