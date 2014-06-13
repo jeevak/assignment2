@@ -14,15 +14,16 @@
     <!--meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1"-->
 
-    <link ref="stylesheet" href="css/bootstrap.min.css">
-    <!--link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css"-->
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/united-bootstrap.min.css">
+    <!--link rel="stylesheet" href="css/main.css"-->
+
     <!--script src="js/vendor/modernizr-2.6.2.min.js"></script-->
     <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
     <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
     <script src="js/order.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="page">
@@ -33,16 +34,21 @@
     <header class="container">
     </header>
     <section id="body" class="container">
-        <form>
-            <div id="restaurants" class="col-md-offset-2 col-md-6">
-                <select id="listOfRestaurants" autofocus="true"></select>
+        <section id="restaurants" class="row">
+            <div class="col-lg-offset-2 col-md-offset-2 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <select id="listOfRestaurants" class="form-control" autofocus="true"></select>
             </div>
-            <div id="menuitems" class="col-md-6">
+        </section>
+        <section class="row">
+            <div class="col-lg-offset-2 col-md-offset-2 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div id="menuitems" class="checkbox"></div>
             </div>
-            <div id="ready">
-                <input id="submit" type="submit" value="Submit">
+        </section>
+        <section id="ready" class="row">
+            <div class="col-lg-offset-2 col-md-offset-2 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <input id="submit" type="submit" value="Submit" class="btn-success btn-lg btn-sm">
             </div>
-        </form>
+        </section>
     </section>
     <hr/>
     <footer class="container">
