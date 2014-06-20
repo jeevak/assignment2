@@ -22,8 +22,10 @@
     <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
     <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
-    <script src="js/order.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/order.js"></script>
+
 </head>
 <body>
 <div id="page">
@@ -31,7 +33,26 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
         your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header class="container">
+    <header>
+        <div id="menu" class="container-fluid navbar navbar-default">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Coding House Restaurant Order App</a>
+            </div>
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav"><a href="">Home</a></li>
+                    <li class="nav"><a href="">About</a></li>
+                    <li class="nav">
+                        <a href="" id="login-form">Login</a>
+                        <div id="login"><input type="text" id="username" class="col-sm-2"><input type="password"
+                                                                                                 id="pwd"
+                                                                                                 class="col-sm-2"><input
+                                id="login-submit" type="submit" value="Submit" class="btn btn-primary"></div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <section id="body" class="container">
         <section id="restaurants" class="row">
@@ -46,7 +67,8 @@
         </section>
         <section id="ready" class="row">
             <div class="col-lg-offset-2 col-md-offset-2 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <input id="submit" type="submit" value="Submit" class="btn-success btn-lg btn-sm">
+                <button type="button" id="cancel" class="btn btn-default">Cancel</button>
+                <input id="submit" type="submit" value="Submit" class="btn btn-primary">
             </div>
         </section>
     </section>
