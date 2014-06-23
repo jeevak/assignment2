@@ -16,16 +16,9 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/united-bootstrap.min.css">
-    <!--link rel="stylesheet" href="css/main.css"-->
+    <link rel="stylesheet" href="css/main.css">
 
     <!--script src="js/vendor/modernizr-2.6.2.min.js"></script-->
-    <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-    <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/order.js"></script>
-
 </head>
 <body>
 <div id="page">
@@ -40,15 +33,14 @@
             </div>
             <div class="container-fluid">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav"><a href="">Home</a></li>
-                    <li class="nav"><a href="">About</a></li>
+                    <li class="nav"><button type="button" class="btn btn-primary">Home</button></li>
+                    <li class="nav"><button type="button" class="btn btn-primary">About</button></li>
                     <li class="nav">
-                        <a href="" id="login-form">Login</a>
-                        <div id="login"><input type="text" id="username" class="col-sm-2"><input type="password"
-                                                                                                 id="pwd"
-                                                                                                 class="col-sm-2"><input
-                                id="login-submit" type="submit" value="Submit" class="btn btn-primary"></div>
-
+                        <form class="login-credentials" method="post" action="/login" target="_top">
+                            <input tabindex=1 class="login-email" type="text" name="email" placeholder="e-mail">
+                            <input tabindex=2 class="login-password" type="password" name="password" placeholder="password" autocomplete="false">
+                        </form>
+                        <button tabindex=3 type="button" id="login-form" class="btn btn-primary">Login</button>
                     </li>
                 </ul>
             </div>
@@ -76,5 +68,10 @@
     <footer class="container">
     </footer>
 </div>
+<script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+<script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/order.js"></script>
 </body>
 </html>

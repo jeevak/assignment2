@@ -358,3 +358,18 @@ textarea {
     }
 }
 */
+.login-credentials, #restaurants, #ready{
+    display: none;
+}
+.login-email,.login-password{
+    border:2px solid #cacfd2;
+    color:#3c3e45;
+    cursor:pointer;
+    display:inline-block;
+    border-radius:4px;
+    background:white;
+    margin:0;
+    vertical-align:baseline;
+    font-weight:400
+}
+
