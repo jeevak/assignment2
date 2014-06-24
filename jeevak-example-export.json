@@ -1,0 +1,104 @@
+{
+    "restaurants": [
+        {
+            "menu": [
+                {
+                    "itemName": "Im not Belgian"
+                },
+                {
+                    "itemName": "Potter's Creek"
+                },
+                {
+                    "itemName": "7th & Grayson"
+                },
+                {
+                    "itemName": "Time-Life Cookbook"
+                }
+            ],
+            "name": "900 Grayson"
+        },
+        {
+            "menu": [
+                {
+                    "itemName": "Dahi Papdi Chaat"
+                },
+                {
+                    "itemName": "Sev Puri"
+                },
+                {
+                    "itemName": "Chole Bhatura"
+                },
+                {
+                    "itemName": "Pav Bhaji"
+                },
+                {
+                    "itemName": "Lamb Baida Roti"
+                }
+            ],
+            "name": "Viks Chaat"
+        },
+        {
+            "menu": [
+                {
+                    "itemName": "Spring Rolls"
+                },
+                {
+                    "itemName": "Chicken Pho"
+                },
+                {
+                    "itemName": "Chicken Fried Rice"
+                },
+                {
+                    "itemName": "Thai ice tea"
+                }
+            ],
+            "name": "Little Saigon"
+        },
+        {
+            "menu": [
+                {
+                    "itemName": "Unagi Nigiri"
+                },
+                {
+                    "itemName": "Hamachi Sashimi"
+                },
+                {
+                    "itemName": "Agadeshi Tofu"
+                },
+                {
+                    "itemName": "Chicken Katsu"
+                },
+                {
+                    "itemName": "Shiso Chicken- Robata Grill"
+                }
+            ],
+            "name": "Kirala Japanese Restaurant"
+        }
+    ],
+    "orders": {
+        "-JPqtuZWRD5_r20A39DA": {
+            "order": [ "Potter", "7th & Grayson" ],
+            "user": "default",
+            "restaurant": "900 Grayson"
+        },
+        "-JP7oLzc5vsh5LMVRPmb": {
+            "order": [ "Chicken Fried Rice", "Thai ice tea" ],
+            "user": "default",
+            "restaurant": "Little Saigon"
+        }
+    },
+    "users": [
+        {
+            "username": "admin",
+            "password": "admin"
+        },
+        {
+            "username": "customer",
+            "password": "happy"
+        },
+        {
+            "username": "joe",
+            "password": "jane"
+        }
+    ]
+}

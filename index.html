@@ -1,12 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,36 +10,33 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/united-bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <!--script src="js/vendor/modernizr-2.6.2.min.js"></script-->
 </head>
 <body>
 <div id="page">
-    <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-        your browser</a> to improve your experience.</p>
-    <![endif]-->
     <header>
         <div id="menu" class="container-fluid navbar navbar-default">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">Coding House Restaurant Order App</a>
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">Foodie.fi</a>
             </div>
-            <div class="container-fluid">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav"><button type="button" class="btn btn-primary">Home</button></li>
-                    <li class="nav"><button type="button" class="btn btn-primary">About</button></li>
-                    <li class="nav">
-                        <form class="login-credentials" method="post" action="/login" target="_top">
-                            <input tabindex=1 class="login-email" type="text" name="email" placeholder="e-mail">
-                            <input tabindex=2 class="login-password" type="password" name="password" placeholder="password" autocomplete="false">
-                        </form>
-                        <button tabindex=3 type="button" id="login-form" class="btn btn-primary">Login</button>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav navbar-nav pull-right">
+                <li><button type="button" class="btn btn-primary">Home</button></li>
+                <li><button type="button" class="btn btn-primary">About</button></li>
+                <li class="ch-login"><form class="login-credentials" method="post" action="/login" target="_top">
+                    <input tabindex=1 class="login-username" type="text" name="username" placeholder="username">
+                    <input tabindex=2 class="login-password" type="password" name="password" placeholder="password"
+                           autocomplete="false">
+                </form>
+                <button tabindex=3 type="button" id="login-form" class="btn btn-primary">Login</button></li>
+            </ul>
         </div>
     </header>
-    <section id="body" class="container">
+    <div class="jumbotron ch-home">
+        <h1>Foodie.fi</h1>
+        <p>This is a simple restaurant app I built to understand Bootstrap, JQuery and HTML5</p>
+        <p><a class="btn btn-primary btn-lg ch-order">Order</a>
+            <a class="btn btn-info btn-lg ch-history">History</a></p>
+    </div>
+    <section id="body" class="container-fluid">
         <section id="restaurants" class="row">
             <div class="col-lg-offset-2 col-md-offset-2 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <select id="listOfRestaurants" class="form-control" autofocus="true"></select>
@@ -64,6 +54,22 @@
             </div>
         </section>
     </section>
+    <div class="modal" id="ch-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <hr/>
     <footer class="container">
     </footer>
@@ -71,6 +77,7 @@
 <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
 <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+<script src='https://cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js'></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/order.js"></script>
 </body>
